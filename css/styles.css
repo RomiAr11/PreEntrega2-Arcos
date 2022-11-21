@@ -1,0 +1,188 @@
+/*reset*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Estilos del body*/
+
+body{
+    background-color: #edb98e;
+}
+/*estilos de header*/
+
+header {
+    padding: 30px;
+    text-align: center;
+}
+
+header div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+header h1,
+header p {
+    margin: 20px;
+}
+
+header img {
+    width: 150px;
+}
+
+header nav ul {
+    list-style: none;
+    background-color: #ecccb2;
+    border-radius: 15px;
+}
+
+header nav ul li {
+    margin: 20px;
+    padding: 15px;
+    display: inline;
+    text-align: left;
+    
+}
+
+/*estilos de main*/
+
+main {
+    text-align: center;
+    padding: 30px;
+    margin: 30px;
+    border: 10px dotted #ecccb2;
+}
+
+
+
+main h2 {
+    text-align: center;
+    margin: 10px;
+}
+
+main img {
+    width: 500px;
+
+}
+
+.Formulario {
+    margin: 30px;
+    padding: 30px;
+    border: dotted #efe5dd;
+}
+
+.Formulario:hover{
+    transform: scale(1.2);
+}
+.botones {
+    text-align: center;
+}
+
+.contacto {
+    width: 300px;
+}
+
+.quienes-somos {
+    text-align: center;
+    padding: 30px;
+    margin: 30px;
+    display: inline-block;
+}
+
+.quienes-somos-img {
+    width: 350px;
+}
+
+.ubicacion {
+    padding: 10px;
+    margin: 30px;
+}
+
+.galeria {
+    width: 200px;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+}
+
+/*estilos de footer*/
+
+footer {
+    text-align: center;
+    margin-top: 10px;
+}
+
+footer h3 {
+    font-size: 13px;
+    margin: 10px;
+}
+
+footer ul li {
+    list-style: none;
+    font-weight: bolder;
+    display: inline;
+    margin: 10px;
+}
+
+/*MQ para mobile*/
+
+@media screen and (min-width: 480px){
+    
+    /*Estilos del header*/
+
+    header nav ul li{
+        padding: 0.5rem;
+        margin: 1rem;
+    }
+
+    /*Estilos del main*/
+
+    main img{
+        width: 200px;
+    }
+}
+
+/*MQ para tablet*/
+
+@media screen and (min-width: 600px) {
+   
+/*Estilos de header*/
+
+header div{
+display: block;
+}
+/*Estilos de main*/
+ 
+main img{
+    width: 500px;
+}
+
+main div iframe{
+    width: 500px;
+}
+}
+   
+/*MQ para pc*/
+
+@media screen and (min-width: 1080px) {
+
+    /*Estilos del header*/
+
+    header div img:hover{
+        transform: scale(1.8);
+    }
+    
+    /*Menu*/
+
+    header nav ul li a:hover{
+        transform: 
+        scale(0.9)
+        rotate(180deg);
+        transition: 3s;
+    }
+}
+
